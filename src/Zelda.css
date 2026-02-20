@@ -1,0 +1,60 @@
+/* Header and Footer */
+header {
+    background: #043018;
+}
+
+footer {
+    background: #043018;
+}
+
+/* Navigation */
+.MenuNav {
+  background: #0a4b27;
+}
+
+/* Dropdown */
+.MenuNav li ul {
+    background: rgb(56, 34, 16);
+}
+
+/* Main */
+body {
+    background: rgb(238, 222, 188);
+    color: rgb(56, 34, 16);
+}
+
+h2 {
+    font-size: 22pt;
+    margin-left: 30px;
+    padding: 3px;
+    background: rgb(161, 148, 131);
+}
+
+h3 {
+    font-size: 18pt;
+    display: inline;
+    padding: 3px;
+    border: 1px solid rgb(56, 34, 16);
+    background: rgb(161, 148, 131);
+}
+
+main div {
+    margin-left: 60px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgb(219, 193, 158);
+}
+
+main img {
+    border: 3px solid rgb(161,148,131);
+    height: 70px;
+}
+
+div strong {
+    font-size: 16pt;
+}
+
+div em {
+    font-size: 10pt;
+    color: brown;
+}
