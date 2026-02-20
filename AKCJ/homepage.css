@@ -33,6 +33,11 @@ body {
   color: #4b0082; /* indigo-ish purple */
 }
 
+main {
+  align-items: center; 
+  text-align: center;
+}
+
 .price {
   display: block;
   margin: 10px 0;
@@ -44,14 +49,27 @@ body {
   background-color: rgb(215, 147, 215);
   color: white;
   border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
+  border-radius: 100px;
   cursor: pointer;
+  padding: 70px 70px; 
+  font-size: 2rem;
+  min-width: 160px;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .btn:hover {
   background-color: #5e1aa8;
 }
+
+nav {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
 
 .store-footer {
   text-align: center;

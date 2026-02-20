@@ -11,6 +11,11 @@ body {
   padding: 20px 10px;
 }
 
+main {
+  align-items: center; 
+  text-align: center;
+}
+
 .stores {
   display: flex;
   flex-wrap: wrap;
@@ -51,6 +56,30 @@ body {
 
 .btn:hover {
   background-color: #5e1aa8;
+}
+
+.btn-food {
+  background-color: rgb(81, 136, 209);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 32px 58px; 
+  font-size: 1.4rem;
+  min-width: 160px;
+  text-align: center;
+}
+
+.btn-food:hover {
+  background-color: #4e81ab;
+}
+
+.foodItem {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
 }
 
 .store-footer {
