@@ -1,0 +1,164 @@
+:root{
+  --bg: #f7f3ff;
+  --purple: purple;
+  --purple-dark: #4b0082; /* indigo-ish */
+  --card: #ffffff;
+  --border: #ddd;
+  --shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: #222;
+}
+
+#item_display_containter {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+#leftSide_info {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pictureContainer {
+  width: 100%;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#foodPicture {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#rightSide_info {
+  flex: 1.2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#itemHeader {
+  background-color: var(--purple);
+  color: white;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+
+#itemName {
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+#price,
+#calories {
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.95;
+}
+
+#itemHeader span {
+  font-size: 1rem;
+}
+
+#itemDescription {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  box-shadow: var(--shadow);
+
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #2a2a2a;
+}
+
+.foodType-header {
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.stores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.store {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  width: 220px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.store h2 {
+  margin-top: 0;
+  color: #4b0082; /* indigo-ish purple */
+}
+
+.price {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: purple;
+}
+
+.btn {
+  background-color: rgb(215, 147, 215);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5e1aa8;
+}
+
+.store-footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #eee;
+  font-size: 0.9rem;
+}
