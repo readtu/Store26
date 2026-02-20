@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f3ff;
+}
+
+.foodType-header {
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.stores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.store {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  width: 220px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.store h2 {
+  margin-top: 0;
+  color: #4b0082; /* indigo-ish purple */
+}
+
+.price {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: purple;
+}
+
+.btn {
+  background-color: rgb(215, 147, 215);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5e1aa8;
+}
+
+.store-footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #eee;
+  font-size: 0.9rem;
+}
