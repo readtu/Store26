@@ -1,0 +1,8 @@
+#item_display_containter {
+    display: flex;
+
+}
+
+#foodPicture {
+    max-width: 100%;
+}
