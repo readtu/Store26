@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Navigation */
+.MenuNav {
+  background: #333;
+}
+
+.MenuNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.MenuNav li {
+  position: relative;
+}
+
+.MenuNav > ul > li {
+  padding: 15px;
+}
+
+.MenuNav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Dropdown */
+.MenuNav li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #444;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.MenuNav li:hover ul {
+  display: block;
+}
+
+.MenuNav li ul li {
+  padding: 10px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .MenuNav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  .MenuNav ul.active {
+    display: flex;
+  }
+
+  .MenuNav li ul {
+    position: static;
+  }
+}
+
+.logo_banner {
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.logo_banner img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
