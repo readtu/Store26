@@ -1,0 +1,41 @@
+/* Stack the headers on top of each other */
+.dual-language-container {
+  position: relative;
+  display: inline-block; /* Keeps the container the size of the text */
+  cursor: pointer;
+}
+
+.dual-language-container h1,
+.dual-language-container h3 {
+  margin: 0;
+  transition: opacity 0.8s ease; /* Adjust 0.8s to change the speed */
+}
+
+/* Default state: Aurebesh is visible, English is hidden */
+.aurebesh-text {
+  font-family: "Aurebesh", sans-serif;
+  opacity: 1;
+}
+
+.english-text {
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  white-space: nowrap; /* Prevents text wrapping during fade */
+}
+
+/* Hover state: Slow swap */
+.dual-language-container:hover .aurebesh-text {
+  opacity: 0;
+}
+
+.dual-language-container:hover .english-text {
+  opacity: 1;
+}
+
+div img {
+  border: 3px solid rgb(161, 148, 131);
+  height: 70px;
+}
