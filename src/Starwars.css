@@ -1,3 +1,101 @@
+/* ===== Color Variables ===== */
+:root {
+  --bg-dark: #0b0f1a; /* Deep space */
+  --bg-panel: #111827; /* Dark panel */
+  --bg-card: #1a2233; /* Slightly lighter panel */
+  --accent-yellow: #ffe81f; /* Opening crawl yellow */
+  --accent-blue: #1e90ff; /* Jedi blue */
+  --accent-red: #e10600; /* Sith red */
+  --text-light: #f5f5f5;
+  --text-muted: #9ca3af;
+}
+
+/* ===== Header & Footer ===== */
+header,
+footer {
+  background: var(--bg-dark);
+  color: var(--accent-yellow);
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ===== Navigation ===== */
+.MenuNav {
+  background: var(--bg-panel);
+}
+
+.MenuNav a {
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.MenuNav a:hover {
+  color: var(--accent-yellow);
+  text-shadow: 0 0 8px rgba(255, 232, 31, 0.8);
+}
+
+/* ===== Dropdown ===== */
+.MenuNav li ul {
+  background: var(--bg-card);
+}
+
+/* ===== Main ===== */
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  font-family: "Orbitron", sans-serif;
+}
+
+h2 {
+  font-size: 22pt;
+  margin-left: 30px;
+  padding: 6px;
+  background: var(--bg-panel);
+  color: var(--accent-yellow);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 232, 31, 0.7);
+}
+
+h3 {
+  font-size: 18pt;
+  display: inline;
+  padding: 5px 8px;
+  border: 1px solid var(--accent-blue);
+  background: var(--bg-panel);
+  color: var(--accent-blue);
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.6);
+}
+
+main div {
+  margin-left: 60px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background: var(--bg-card);
+  border-left: 4px solid var(--accent-blue);
+  border-radius: 6px;
+}
+
+main img {
+  border: 3px solid var(--accent-yellow);
+  height: 70px;
+}
+
+/* Strong text (highlight like a lightsaber glow) */
+div strong {
+  font-size: 16pt;
+  color: var(--accent-yellow);
+}
+
+/* Subtext */
+div em {
+  font-size: 10pt;
+  color: var(--text-muted);
+}
 /* Stack the headers on top of each other */
 .dual-language-container {
   position: relative;
@@ -38,4 +136,14 @@
 div img {
   border: 3px solid rgb(161, 148, 131);
   height: 70px;
+}
+
+a {
+  color: var(--accent-yellow);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: var(--accent-yellow);
+  text-shadow: 0 0 8px rgba(255, 232, 31, 0.8);
 }
