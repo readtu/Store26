@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fantasy Kitchen</title>
+    <link rel="icon" href="/Fantasy_Kitchen_public/Fantasy_Kitchen_Logo.png" />
+    <link rel="stylesheet" href="Header.css" />
+    <script src="Header.js"></script>
+  </head>
+  <body>
+    <div id="Header"></div>
+
+    <main class="hero">
+      <div class="stars"></div>
+
+      <h1 class="title">Fantasy Kitchen</h1>
+      <p class="subtitle">Your stop for Fantasy Resturants</p>
+
+      <div class="floating">
+        <span>🍅</span>
+        <span>🧄</span>
+        <span>🧀</span>
+        <span>🥖</span>
+        <span>🌿</span>
+      </div>
+    </main>
+
+    <div id="Footer"></div>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #1b1b2f, #0f0f1a);
+    color: white;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 4rem;
+    background: linear-gradient(90deg, #ffb347, #ffcc33, #ff5f6d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+  }
+
+  .cta {
+    padding: 14px 32px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff5f6d, #ffc371);
+    color: white;
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.4);
+  }
+
+  .cta:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 35px rgba(255, 140, 0, 0.8);
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow:
+        0 0 10px #ff9a9e,
+        0 0 20px #fad0c4;
+    }
+    to {
+      text-shadow:
+        0 0 20px #ffdde1,
+        0 0 40px #ee9ca7;
+    }
+  }
+
+  /* Floating Ingredients */
+  .floating span {
+    position: absolute;
+    font-size: 2rem;
+    animation: float 8s linear infinite;
+  }
+
+  .floating span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+  }
+  .floating span:nth-child(2) {
+    left: 25%;
+    animation-delay: 2s;
+  }
+  .floating span:nth-child(3) {
+    left: 50%;
+    animation-delay: 4s;
+  }
+  .floating span:nth-child(4) {
+    left: 70%;
+    animation-delay: 1s;
+  }
+  .floating span:nth-child(5) {
+    left: 85%;
+    animation-delay: 3s;
+  }
+
+  @keyframes float {
+    0% {
+      bottom: -50px;
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-50vh) rotate(180deg);
+    }
+    100% {
+      bottom: 110%;
+      opacity: 0;
+    }
+  }
+</style>
