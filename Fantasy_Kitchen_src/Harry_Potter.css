@@ -9,52 +9,39 @@ footer {
 
 /* Navigation */
 .MenuNav {
-  background: #0a4b27;
+  background: rgb(217, 182, 9);
 }
 
 /* Dropdown */
 .MenuNav li ul {
-  background: rgb(56, 34, 16);
+  background: rgb(54, 53, 52);
 }
 
 /* Main */
 body {
-  background: rgb(238, 222, 188);
-  color: rgb(56, 34, 16);
+  background: rgb(127, 126, 125);
+  color: rgb(54, 53, 52);
+  text-align: center;
 }
 
 h2 {
-  font-size: 22pt;
-  margin-left: 30px;
-  padding: 3px;
-  background: rgb(161, 148, 131);
-}
-
-h3 {
   font-size: 18pt;
-  display: inline;
+  margin: 20px;
   padding: 3px;
-  border: 1px solid rgb(56, 34, 16);
-  background: rgb(161, 148, 131);
-}
-
-main div {
-  margin-left: 60px;
-  margin-bottom: 10px;
-  padding: 10px;
-  background: rgb(219, 193, 158);
+  background: rgb(217, 182, 9);
 }
 
 main img {
-  border: 3px solid rgb(161, 148, 131);
-  height: 70px;
+  border: 6px solid rgb(217, 182, 9);
+  height: 200px;
+  margin: 20px;
 }
 
 div strong {
   font-size: 16pt;
 }
 
-div em {
-  font-size: 10pt;
-  color: brown;
+
+p {
+  margin: 20px;
 }
