@@ -50,7 +50,7 @@ header h1:hover {
     color: black;
 }
 
-#breakfast body {
+#breakfast {
     background-color: #DF9B5A;
 }
 
@@ -181,6 +181,7 @@ ul {
     height: 400px;
     padding: 0px;
     text-decoration: none;
+    color: black;
     transition: all 100ms ease-in-out;
 
     overflow: hidden;
