@@ -37,11 +37,12 @@ header > a {
     margin-left: 15px;
     padding: 5px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em;
+    align-content: center;
 }
 
 header h1 {
     margin: 0px;
+    font-size: 1.5em;
 }
 
 #breakfast body {
@@ -67,7 +68,7 @@ p {
     width: 1400px;
 }
 
-a {
+#menuitems a {
     text-decoration: none;
     color: black;
     margin-left: 50px;
