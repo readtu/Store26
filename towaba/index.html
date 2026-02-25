@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToWaba the Resturaunt</title>
+
+    <link rel="icon" type="image/x-icon" href="pictures/tim.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="switch.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-page-header">
+        <a href="index.html"><h1>ToWaBa</h1></a>
+        <nav>
+            <a href="breakfast-menu.html">Breakfast</a>
+            <a href="lunch-menu.html">Lunch</a>
+            <a href="dinner-menu.html">Dinner</a>
+        </nav>
+    </header>
+    <main id="landing-page">
+        <h2>Welcome to</h2>
+        <h1 id="mainpage-title">ToWaBa</h1>
+        <h3>To get started, choose a menu: </h3>
+        <div id="menus">
+            <a href="breakfast-menu.html"><iframe id="breakfast-menu" src="breakfast-menu.html" frameborder="0"></iframe></a>
+            <a href="lunch-menu.html"><iframe id="lunch-menu" src="lunch-menu.html" frameborder="0"></iframe></a>
+            <a href="dinner-menu.html"><iframe id="dinner-menu" src="dinner-menu.html" frameborder="0"></iframe></a>
+        </div>
+
+        <div id="multiModeMenu">
+            <label class="switch">
+                <input type="checkbox" onclick="multiMode()" id="switch">
+                <span class="slider round"></span>
+            </label>
+            <h4>Multi-tasking Mode</h4>
+        </div>
+
+    </main>
+    <script>
+        breakfastMenu = document.querySelector("#breakfast-menu")
+        lunchMenu = document.querySelector("#lunch-menu")
+        dinnerMenu = document.querySelector("#dinner-menu")
+
+        switchElement = document.querySelector("#switch")
+        multiMode()
+
+        setInterval(updateAnchorHREF, 200, breakfastMenu)
+        setInterval(updateAnchorHREF, 200, lunchMenu)
+        setInterval(updateAnchorHREF, 200, dinnerMenu)
+
+        function multiMode() {
+            if (switchElement.checked) {
+                breakfastMenu.classList.add("multi-mode")
+                lunchMenu.classList.add("multi-mode")
+                dinnerMenu.classList.add("multi-mode")
+            }
+            else {
+                breakfastMenu.classList.remove("multi-mode")
+                lunchMenu.classList.remove("multi-mode")
+                dinnerMenu.classList.remove("multi-mode")
+            }
+        }
+
+        function updateAnchorHREF(iframeElement) {
+            a = iframeElement.parentElement
+            a.href = iframeElement.contentWindow.location.href
+        }
+    </script>
+</body>
+</html>
