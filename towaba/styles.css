@@ -89,7 +89,7 @@ p {
 }
 
 #options img {
-    width: 400px;
+    width: 395px;
     height: 300px;
 }
 
@@ -98,7 +98,6 @@ p {
     box-shadow: 10px 10px;
     cursor: pointer;
     transition: all 100ms ease-in-out;
-
 }
 
 #options:active {
@@ -125,6 +124,8 @@ img {
 #flexdiv {
     display: flex;
     justify-content: center;
+    margin-left: 270px;
+    margin-right: 270px;
 }
 
 #content_wrapper {
