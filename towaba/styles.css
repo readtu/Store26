@@ -207,3 +207,15 @@ ul {
     height: calc(1 / var(--scale) * 100%);
     transform: scale(var(--scale));
 }
+.multi-mode {
+    pointer-events: all !important;
+}
+
+#multiModeMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#multiModeMenu h4 {
+    padding: 15px;
+}
