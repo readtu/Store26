@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<head>
+    <!-- These should be on every page -->
+    <meta charset="UTF-8">
+    <title>The Hobbit Hole</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="door_favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="hobbit-nav">
+        <div class="nav-logo">
+
+            <div class="menu-btn" id="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="hobbit-home.html">Home</a></li>
+                    <li class="nav__item"><a href="hobbit-home.html#meals">Menu</a></li>
+                    <li class="nav__item"><a href="hobbit-clock.html">Clock</a></li>
+                    <li class="nav__item"><a href="breakfast.html">Breakfast</a></li>
+                    <li class="nav__item"><a href="second-breakfast.html">Second Breakfast</a></li>
+                    <li class="nav__item"><a href="elevenses.html">Elevenses</a></li>
+                    <li class="nav__item"><a href="luncheon.html">Luncheon</a></li>
+                    <li class="nav__item"><a href="afternoon-tea.html">Afternoon Tea</a></li>
+                    <li class="nav__item"><a href="dinner.html">Dinner</a></li>
+                    <li class="nav__item"><a href="supper.html">Supper</a></li>
+                    <li class="nav__item"><a href="desserts.html">Desserts</a></li>
+                    <li class="nav__item"><a href="drinks.html">Drinks</a></li>
+
+                </ul>
+            </nav>
+            <a href="hobbit-home.html" style="color: white; text-decoration: none;">The Hobbit Hole</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="hobbit-home.html">Home</a></li>
+            <li><a href="hobbit-clock.html">Clock</a></li>
+            <li><a href="hobbit-home.html#meals">Menu</a></li>
+        </ul>
+    </nav>
+    <div class="cover">
+        <h1 class="cover-content">Breakfast</h1>
+    </div>
+    <div class="meal-page-grid">
+        <section class="meals-section">
+            <div class="mealEntry">
+                <img src="break.jpg" class="mealimg">
+                <span class="mealtitle">
+                    <h1>Shire Sunrise Fry-Up</h1>
+                    <p>A hearty morning plate of golden fried eggs, crisp bacon, buttered toast, and sautéed mushrooms. Warm, savory, and filling — the kind of breakfast that prepares a Hobbit for gardening, walking, or an unexpected journey.</p>
+                </span>
+            </div>
+            <div class="mealEntry">
+                <img src="break2.webp" class="mealimg">
+                <span class="mealtitle">
+                    <h1>Honeyed Hearth Porridge</h1>
+                    <p>Thick, creamy porridge drizzled with honey and served alongside fresh bread with jam and browned sausage links. Comforting and wholesome, this meal warms both the stomach and the spirit at the start of the day.</p>
+                </span>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>© 2026 The Hobbit Hole | Welcome to the Shire</p>
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const nav = document.getElementById('nav');
+
+            menuBtn.addEventListener('click', () => {
+                menuBtn.classList.toggle('open');
+                nav.classList.toggle('open');
+            });
+
+        </script>
+    </footer>
+</body></html>
