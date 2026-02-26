@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>The Hobbit Hole</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="https://cse.taylor.edu/~ndaggett/cos243/door_favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&amp;family=EB+Garamond&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="hobbit-nav">
+        <div class="nav-logo">
+
+            <div class="menu-btn" id="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="hobbit-home.html">Home</a></li>
+                    <li class="nav__item"><a href="hobbit-home.html#meals">Menu</a></li>
+                    <li class="nav__item"><a href="hobbit-clock.html">Clock</a></li>
+                    <li class="nav__item"><a href="breakfast.html">Breakfast</a></li>
+                    <li class="nav__item"><a href="second-breakfast.html">Second Breakfast</a></li>
+                    <li class="nav__item"><a href="elevenses.html">Elevenses</a></li>
+                    <li class="nav__item"><a href="luncheon.html">Luncheon</a></li>
+                    <li class="nav__item"><a href="afternoon-tea.html">Afternoon Tea</a></li>
+                    <li class="nav__item"><a href="dinner.html">Dinner</a></li>
+                    <li class="nav__item"><a href="supper.html">Supper</a></li>
+                    <li class="nav__item"><a href="desserts.html">Desserts</a></li>
+                    <li class="nav__item"><a href="drinks.html">Drinks</a></li>
+
+                </ul>
+            </nav>
+            <a href="hobbit-home.html" style="color: white; text-decoration: none;">The Hobbit Hole</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="hobbit-home.html">Home</a></li>
+            <li><a href="hobbit-clock.html">Clock</a></li>
+            <li><a href="hobbit-home.html#meals">Menu</a></li>
+        </ul>
+    </nav>
+    <div class="cover">
+        <h1 class="cover-content">Second Breakfast</h1>
+    </div>
+
+    <div class="mealEntry">
+        <img src="secBreak.jpg" class="mealimg">
+
+        <div class="mealinfo">
+            <div class="meal-header">
+                <h2 class="meal-name">Midmorning Meadow Spread</h2>
+                <span class="meal-price">$7</span> 
+            </div>
+            <p class="meal-description">A light but satisfying assortment of warm scones with cream and fresh berry spread, paired with hot tea. Sweet, soft, and refreshing — perfect for restoring energy before the noon hour.</p>
+            <p></p>
+            <em> 510 Calories</em>
+
+        </div>
+    </div>
+
+    <div class="mealEntry">
+        <img src="secBreak2.webp" class="mealimg">
+
+        <div class="mealinfo">
+            <div class="meal-header">
+                <h2 class="meal-name">Green Hill Cold Plate</h2> 
+                <span class="meal-price">$8</span> 
+            </div>
+            <p class="meal-description">Slices of crusty bread, aged cheese, crisp apples, and tender cold ham. Simple, rustic ingredients arranged for easy enjoyment — practical yet delicious.</p>
+            <p></p>
+            <em> 635 Calories</em>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 The Hobbit Hole | Welcome to the Shire</p>
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const nav = document.getElementById('nav');
+
+            menuBtn.addEventListener('click', () => {
+                menuBtn.classList.toggle('open');
+                nav.classList.toggle('open');
+            });
+
+        </script>
+    </footer>
+</body></html>
