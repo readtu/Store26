@@ -1,0 +1,47 @@
+/* Header and Footer */
+header {
+  background: rgb(156, 32, 23);
+}
+
+footer {
+  background: rgb(217, 182, 9);
+}
+
+/* Navigation */
+.MenuNav {
+  background: rgb(217, 182, 9);
+}
+
+/* Dropdown */
+.MenuNav li ul {
+  background: rgb(54, 53, 52);
+}
+
+/* Main */
+body {
+  background: rgb(127, 126, 125);
+  color: rgb(54, 53, 52);
+  text-align: center;
+}
+
+h2 {
+  font-size: 18pt;
+  margin: 20px;
+  padding: 3px;
+  background: rgb(217, 182, 9);
+}
+
+main img {
+  border: 6px solid rgb(217, 182, 9);
+  height: 200px;
+  margin: 20px;
+}
+
+div strong {
+  font-size: 16pt;
+}
+
+
+p {
+  margin: 20px;
+}

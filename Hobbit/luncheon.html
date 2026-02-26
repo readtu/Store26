@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- These should be on every page -->
+    <meta charset="UTF-8">
+    <title>The Hobbit Hole</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="door_favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="hobbit-nav">
+        <div class="nav-logo">
+
+            <div class="menu-btn" id="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="hobbit-home.html">Home</a></li>
+                    <li class="nav__item"><a href="hobbit-home.html#meals">Menu</a></li>
+                    <li class="nav__item"><a href="hobbit-clock.html">Clock</a></li>
+                    <li class="nav__item"><a href="breakfast.html">Breakfast</a></li>
+                    <li class="nav__item"><a href="second-breakfast.html">Second Breakfast</a></li>
+                    <li class="nav__item"><a href="elevenses.html">Elevenses</a></li>
+                    <li class="nav__item"><a href="luncheon.html">Luncheon</a></li>
+                    <li class="nav__item"><a href="afternoon-tea.html">Afternoon Tea</a></li>
+                    <li class="nav__item"><a href="dinner.html">Dinner</a></li>
+                    <li class="nav__item"><a href="supper.html">Supper</a></li>
+                    <li class="nav__item"><a href="desserts.html">Desserts</a></li>
+                    <li class="nav__item"><a href="drinks.html">Drinks</a></li>
+
+                </ul>
+            </nav>
+            <a href="hobbit-home.html" style="color: white; text-decoration: none;">The Hobbit Hole</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="hobbit-home.html">Home</a></li>
+            <li><a href="hobbit-clock.html">Clock</a></li>
+            <li><a href="hobbit-home.html#meals">Menu</a></li>
+        </ul>
+     </nav>
+
+    <div class="cover">
+        <h1 class="cover-content"> Luncheon</h1>
+    </div>
+
+    <div class="mealEntry">
+        <img class="mealimg" 
+             src="https://www.rhubarbandlavender.com/wp-content/uploads/2022/07/IMG_1337-768x752.jpg"
+             alt="Luncheon 1">
+
+        <div class="mealinfo">
+            <div class="meal-header">
+                <h2 class="meal-name">Hobbit Hole Luncheon Special</h2>
+                <span class="meal-price">$16</span>
+            </div>
+            <p class="meal-description">*SPECIAL DEAL* Start your luncheon with a steaming bowl of beef, stout, and barley soup followed by a ploughman’s lunch featuring cheese, bread, pickles, and glazed baked ham. For dessert, enjoy a slice of blackberry almond tart with a honey whipped mascarpone cream.</p>            <p></p>
+            <em> 1100 Calories</em>
+
+        </div>
+    </div>
+
+    <div class="mealEntry">
+        <img class="mealimg" 
+             src="https://rhubarbandlavender.com/wp-content/uploads/2022/07/IMG_1516-914x1024.jpg"
+             alt="Luncheon 2">
+
+        <div class="mealinfo">
+            <div class="meal-header">
+                <h2 class="meal-name">Samwise Gamgee's Fish and Chips</h2>
+                <span class="meal-price">$14</span>
+            </div>
+            <p class="meal-description">Fresh white fish dipped in a crisp beer batter and fried to golden perfection. Served alongside thick-cut fries with a fluffy interior and crunchy exterior. Accompanied by house tartar sauce and a wedge of lemon.</p>
+            <em> 910 Calories</em>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 The Hobbit Hole | Welcome to the Shire</p>
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const nav = document.getElementById('nav');
+
+            menuBtn.addEventListener('click', () => {
+                menuBtn.classList.toggle('open');
+                nav.classList.toggle('open');
+            });
+
+        </script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- These should be on every page -->
+    <meta charset="UTF-8">
+    <title>The Hobbit Hole</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="door_favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="hobbit-nav">
+        <div class="nav-logo">
+
+            <div class="menu-btn" id="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="hobbit-home.html">Home</a></li>
+                    <li class="nav__item"><a href="hobbit-home.html#meals">Menu</a></li>
+                    <li class="nav__item"><a href="hobbit-clock.html">Clock</a></li>
+                    <li class="nav__item"><a href="breakfast.html">Breakfast</a></li>
+                    <li class="nav__item"><a href="second-breakfast.html">Second Breakfast</a></li>
+                    <li class="nav__item"><a href="elevenses.html">Elevenses</a></li>
+                    <li class="nav__item"><a href="luncheon.html">Luncheon</a></li>
+                    <li class="nav__item"><a href="afternoon-tea.html">Afternoon Tea</a></li>
+                    <li class="nav__item"><a href="dinner.html">Dinner</a></li>
+                    <li class="nav__item"><a href="supper.html">Supper</a></li>
+                    <li class="nav__item"><a href="desserts.html">Desserts</a></li>
+                    <li class="nav__item"><a href="drinks.html">Drinks</a></li>
+
+                </ul>
+            </nav>
+            <a href="hobbit-home.html" style="color: white; text-decoration: none;">The Hobbit Hole</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="hobbit-home.html">Home</a></li>
+            <li><a href="hobbit-clock.html">Clock</a></li>
+            <li><a href="hobbit-home.html#meals">Menu</a></li>
+        </ul>
+     </nav>
+
+    <header class="cover">
+        <div class="cover-content">
+            <h1>The Hobbit Hole</h1>
+            <h2>The Only Place in Middle Earth with 7 Meals a Day!</h2>
+            <a href="#meals" class="btn">View Our Seven Meals</a>
+            <a href="hobbit-clock.html" class="btn">What are the Meal times?</a>
+        </div>
+    </header>
+
+    <section id="meals" class="meals-section">
+        <h2 class="section-title">Our Seven Meals & More</h2>
+
+        <div class="meals-grid">
+
+            <a href="breakfast.html" class="meal-card">
+                <h3>Breakfast</h3>
+                <p>Start the day the Hobbit way.</p>
+            </a>
+
+            <a href="second-breakfast.html" class="meal-card">
+                <h3>Second Breakfast</h3>
+                <p>Because one is never enough.</p>
+            </a>
+
+            <a href="elevenses.html" class="meal-card">
+                <h3>Elevenses</h3>
+                <p>A proper mid-morning delight.</p>
+            </a>
+
+            <a href="luncheon.html" class="meal-card">
+                <h3>Luncheon</h3>
+                <p>Hearty and filling.</p>
+            </a>
+
+            <a href="afternoon-tea.html" class="meal-card">
+                <h3>Afternoon Tea</h3>
+                <p>Tea and sweet comforts.</p>
+            </a>
+
+            <a href="dinner.html" class="meal-card">
+                <h3>Dinner</h3>
+                <p>The grand feast of the day.</p>
+            </a>
+
+            <a href="supper.html" class="meal-card">
+                <h3>Supper</h3>
+                <p>End the day warm and satisfied.</p>
+            </a>
+
+            <h3><br><br> And More if 7 menus is not enough ...</h3>
+
+            <a href="drinks.html" class="meal-card">
+                <h3>Drink Menu</h3>
+                <p>Refreshment for wherever you path may lead</p>
+            </a>
+
+            <a href="desserts.html" class="meal-card">
+                <h3>Dessert</h3>
+                <p>A delight to the ear if a sweet tooth is near</p>
+            </a>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 The Hobbit Hole | Welcome to the Shire</p>
+        <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const nav = document.getElementById('nav');
+
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('open');
+            nav.classList.toggle('open');
+        });
+
+        </script>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- These should be on every page -->
+    <meta charset="UTF-8">
+    <title>The Hobbit Hole</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="door_favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="hobbit-nav">
+        <div class="nav-logo">
+
+            <div class="menu-btn" id="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="hobbit-home.html">Home</a></li>
+                    <li class="nav__item"><a href="hobbit-home.html#meals">Menu</a></li>
+                    <li class="nav__item"><a href="hobbit-clock.html">Clock</a></li>
+                    <li class="nav__item"><a href="breakfast.html">Breakfast</a></li>
+                    <li class="nav__item"><a href="second-breakfast.html">Second Breakfast</a></li>
+                    <li class="nav__item"><a href="elevenses.html">Elevenses</a></li>
+                    <li class="nav__item"><a href="luncheon.html">Luncheon</a></li>
+                    <li class="nav__item"><a href="afternoon-tea.html">Afternoon Tea</a></li>
+                    <li class="nav__item"><a href="dinner.html">Dinner</a></li>
+                    <li class="nav__item"><a href="supper.html">Supper</a></li>
+                    <li class="nav__item"><a href="desserts.html">Desserts</a></li>
+                    <li class="nav__item"><a href="drinks.html">Drinks</a></li>
+
+                </ul>
+            </nav>
+            <a href="hobbit-home.html" style="color: white; text-decoration: none;">The Hobbit Hole</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="hobbit-home.html">Home</a></li>
+            <li><a href="hobbit-clock.html">Clock</a></li>
+            <li><a href="hobbit-home.html#meals">Menu</a></li>
+        </ul>
+    </nav>
+    <div class="cover">
+        <h1 class="cover-content">Afternoon Tea</h1>
+    </div>
+
+    <div class="mealEntry">
+        <img src="aftTea.png" class="mealimg">
+
+        <div class="mealinfo">
+            <div class="meal-header">
+                <h2 class="meal-name">Garden Tea</h2>
+                <span class="meal-price">$11</span> 
+            </div>
+            <p class="meal-description">Delicate cucumber sandwiches served with slices of seed cake and a freshly brewed pot of tea. Light, refined, and ideal for relaxed conversation.</p>
+            <p></p>
+            <em> 830 Calories - 2 servings</em>
+
+        </div>
+    </div>
+
+    <div class="mealEntry">
+        <img src="aftTea2.png" class="mealimg">
+
+        <div class="mealinfo">
+            <div class="meal-header">
+                <h2 class="meal-name">Berry Bramble Tea Tray</h2> 
+                <span class="meal-price">$8</span> 
+            </div>
+            <p class="meal-description">Flaky berry tart, buttery shortbread biscuits, and a small dish of lemon curd alongside warm tea. Sweet and elegant, this meal celebrates comfort and companionship in the late afternoon.</p>
+            <p></p>
+            <em> 610 Calories</em>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 The Hobbit Hole | Welcome to the Shire</p>
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const nav = document.getElementById('nav');
+
+            menuBtn.addEventListener('click', () => {
+                menuBtn.classList.toggle('open');
+                nav.classList.toggle('open');
+            });
+
+        </script>
+    </footer>
+    </div>
+</body></html>

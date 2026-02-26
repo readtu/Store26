@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- These should be on every page -->
+    <meta charset="UTF-8">
+    <title>The Hobbit Hole</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="door_favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="hobbit-nav">
+        <div class="nav-logo">
+
+            <div class="menu-btn" id="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="hobbit-home.html">Home</a></li>
+                    <li class="nav__item"><a href="hobbit-home.html#meals">Menu</a></li>
+                    <li class="nav__item"><a href="hobbit-clock.html">Clock</a></li>
+                    <li class="nav__item"><a href="breakfast.html">Breakfast</a></li>
+                    <li class="nav__item"><a href="second-breakfast.html">Second Breakfast</a></li>
+                    <li class="nav__item"><a href="elevenses.html">Elevenses</a></li>
+                    <li class="nav__item"><a href="luncheon.html">Luncheon</a></li>
+                    <li class="nav__item"><a href="afternoon-tea.html">Afternoon Tea</a></li>
+                    <li class="nav__item"><a href="dinner.html">Dinner</a></li>
+                    <li class="nav__item"><a href="supper.html">Supper</a></li>
+                    <li class="nav__item"><a href="desserts.html">Desserts</a></li>
+                    <li class="nav__item"><a href="drinks.html">Drinks</a></li>
+
+                </ul>
+            </nav>
+            <a href="hobbit-home.html" style="color: white; text-decoration: none;">The Hobbit Hole</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="hobbit-home.html">Home</a></li>
+            <li><a href="hobbit-clock.html">Clock</a></li>
+            <li><a href="hobbit-home.html#meals">Menu</a></li>
+        </ul>
+     </nav>
+
+    <!-- Changes Start Here-->
+
+    <div class="cover">
+        <h1 class="cover-content">Desserts</h1> <!-- Change Meal name -->
+    </div>
+    
+    <div class="mealEntry">
+        <img class="mealimg" 
+             src="https://www.rhubarbandlavender.com/wp-content/uploads/2022/07/IMG_1523-768x802.jpg" 
+             alt="Elevenses Cakes">
+
+        <div class="mealinfo">
+            <div class="meal-header">
+                <h2 class="meal-name">Hobbiton Stawberry Shortcake </h2> <!-- Here -->
+                <span class="meal-price">$50 whole | $5 per slice</span> <!-- Here -->
+            </div>
+            <p class="meal-description">A delectable treat for the whole family- a hazelnut meringue cake with whipped cream filling. Topped with strawberries and whipped heavy cream</p> <!-- Here --></p>
+            <p></p>
+            <em> 410 Calories per slice</em> <!-- Here -->
+        </div>
+    </div>
+
+    <div class="mealEntry">
+        <img class="mealimg" 
+             src="https://popcornerreviews.com/wp-content/uploads/2020/09/bilbo-baggins-birthday-cake.jpeg" 
+             alt="Elevenses Cakes">
+
+        <div class="mealinfo">
+            <div class="meal-header">
+                <h2 class="meal-name">Bilbo Baggins' 110th Birthday Cake</h2> <!-- Here -->
+                <span class="meal-price">$70 whole | $8 per slice</span> <!-- Here -->
+            </div>
+            <p class="meal-description">Celebrate one of our most accomplished patriarchs, Bilbo Baggins's birthday with us- a vanilla sponge layered with caramelized white chocolate swiss meringue buttercream, topped with fresh fruit and flowers and 111 candles (maybe more like 30 candles).</p> <!-- Here --></p>
+            <p></p>
+            <em> 530 Calories per slice</em> <!-- Here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 The Hobbit Hole | Welcome to the Shire</p>
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const nav = document.getElementById('nav');
+
+            menuBtn.addEventListener('click', () => {
+                menuBtn.classList.toggle('open');
+                nav.classList.toggle('open');
+            });
+
+        </script>
+    </footer>
+</body>
+</html>
